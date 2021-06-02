@@ -25,3 +25,7 @@
 
 ### 3. 현재상황
 > 모델링 진행 
+
+### 4. 사용 툴 
+> python: numpy, pandas, folium, selenium, etc \
+> Cplex
