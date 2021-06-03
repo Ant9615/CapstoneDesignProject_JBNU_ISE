@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3c606140e3e147b489422f6ae952078b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3c606140e3e147b489422f6ae952078b" ></div>
+        
+</body>
+<script>    
+    
+            var map_3c606140e3e147b489422f6ae952078b = L.map(
+                "map_3c606140e3e147b489422f6ae952078b",
+                {
+                    center: [35.81563488182217, 127.15352107073629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_df635cb11e634c64a77b585a7cb8323a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            var circle_marker_a7725cacf3c64fde9aba497961be610a = L.circleMarker(
+                [35.8128548, 127.1571274],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 201, "stroke": true, "weight": 3}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            circle_marker_a7725cacf3c64fde9aba497961be610a.bindTooltip(
+                `<div>
+                     전주향교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_02d556af2adc48b6b5570702cb4782ac = L.circleMarker(
+                [35.8153146, 127.1497569],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 201, "stroke": true, "weight": 3}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            circle_marker_02d556af2adc48b6b5570702cb4782ac.bindTooltip(
+                `<div>
+                     경기전
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fa7dc1c304434fbb8011d5c1d94057bf = L.circleMarker(
+                [35.8134083, 127.149495],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 201, "stroke": true, "weight": 3}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            circle_marker_fa7dc1c304434fbb8011d5c1d94057bf.bindTooltip(
+                `<div>
+                     전동성당
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_54c34ddadcda4dda84cace7799195fc5 = L.circleMarker(
+                [35.8138103, 127.1540973],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 201, "stroke": true, "weight": 3}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            circle_marker_54c34ddadcda4dda84cace7799195fc5.bindTooltip(
+                `<div>
+                     오목대
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_337ddf573832474d9564b761cccb5d77 = L.circleMarker(
+                [35.8106919, 127.15449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 201, "stroke": true, "weight": 3}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            circle_marker_337ddf573832474d9564b761cccb5d77.bindTooltip(
+                `<div>
+                     청연루
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e05a0243953143108bb09268fd10d64a = L.circleMarker(
+                [35.8161644, 127.1493517],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 201, "stroke": true, "weight": 3}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            circle_marker_e05a0243953143108bb09268fd10d64a.bindTooltip(
+                `<div>
+                     어진박물관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc9e9e8e5c0044d8a3840d619d696319 = L.marker(
+                [35.818008, 127.153912],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_fc9e9e8e5c0044d8a3840d619d696319.bindTooltip(
+                `<div>
+                     후보지1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5de7d84edc0478f91abfc6de154b76b = L.marker(
+                [35.817634, 127.152292],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_e5de7d84edc0478f91abfc6de154b76b.bindTooltip(
+                `<div>
+                     후보지2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25c9317f5d114c128e689f7899ac300f = L.marker(
+                [35.817231, 127.1507],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_25c9317f5d114c128e689f7899ac300f.bindTooltip(
+                `<div>
+                     후보지3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca11d906e8f84c86a5d5e2d5d2f0c559 = L.marker(
+                [35.816704, 127.149154],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_ca11d906e8f84c86a5d5e2d5d2f0c559.bindTooltip(
+                `<div>
+                     후보지4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc7a91f7efdc4ad3871c312a8bcab625 = L.marker(
+                [35.815412, 127.148849],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_cc7a91f7efdc4ad3871c312a8bcab625.bindTooltip(
+                `<div>
+                     후보지5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_279a1a906853442c84573b38d783ac5f = L.marker(
+                [35.814038, 127.149151],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_279a1a906853442c84573b38d783ac5f.bindTooltip(
+                `<div>
+                     후보지6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bab0eb6579b40cf9f7817235c3a6dd3 = L.marker(
+                [35.814193, 127.150639],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_9bab0eb6579b40cf9f7817235c3a6dd3.bindTooltip(
+                `<div>
+                     후보지7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3713ed145355469bbfff6cfad47342b8 = L.marker(
+                [35.813447, 127.151297],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_3713ed145355469bbfff6cfad47342b8.bindTooltip(
+                `<div>
+                     후보지8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70b7288a91d547c7b6f95f9cc6f7eb3f = L.marker(
+                [35.812085, 127.151538],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_70b7288a91d547c7b6f95f9cc6f7eb3f.bindTooltip(
+                `<div>
+                     후보지9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f09c7a4a57e74cab9518a8cb672b7a71 = L.marker(
+                [35.810926, 127.151808],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_f09c7a4a57e74cab9518a8cb672b7a71.bindTooltip(
+                `<div>
+                     후보지10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fa7537ce54942349541610a89888332 = L.marker(
+                [35.811091, 127.153401],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_6fa7537ce54942349541610a89888332.bindTooltip(
+                `<div>
+                     후보지11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09d0a9288a214caebfc1981e11fd6a65 = L.marker(
+                [35.811274, 127.15503],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_09d0a9288a214caebfc1981e11fd6a65.bindTooltip(
+                `<div>
+                     후보지12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae208175d93b46f79c0a28c9f521df9b = L.marker(
+                [35.811462, 127.156769],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_ae208175d93b46f79c0a28c9f521df9b.bindTooltip(
+                `<div>
+                     후보지13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11c758b48e8340f8ab9bb5eecaff0248 = L.marker(
+                [35.81179, 127.158172],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_11c758b48e8340f8ab9bb5eecaff0248.bindTooltip(
+                `<div>
+                     후보지14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_185c94c7b4fb4acfa402a08b5cedbb93 = L.marker(
+                [35.81205, 127.156853],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_185c94c7b4fb4acfa402a08b5cedbb93.bindTooltip(
+                `<div>
+                     후보지15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43d8dfb29039406d8d6dec1f022d115a = L.marker(
+                [35.811956, 127.155206],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_43d8dfb29039406d8d6dec1f022d115a.bindTooltip(
+                `<div>
+                     후보지16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a73285f72086408f8ecaf86b1ded065a = L.marker(
+                [35.811851, 127.153581],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_a73285f72086408f8ecaf86b1ded065a.bindTooltip(
+                `<div>
+                     후보지17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67f0db297a57482daf1aa32882048af3 = L.marker(
+                [35.812754, 127.152912],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_67f0db297a57482daf1aa32882048af3.bindTooltip(
+                `<div>
+                     후보지18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fd0eabe75634345a3bdbfca54a7e1d4 = L.marker(
+                [35.814109, 127.152695],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_2fd0eabe75634345a3bdbfca54a7e1d4.bindTooltip(
+                `<div>
+                     후보지19
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56851b7f0aa34ed9be40d766652e423a = L.marker(
+                [35.814923, 127.153648],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_56851b7f0aa34ed9be40d766652e423a.bindTooltip(
+                `<div>
+                     후보지20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0363216b01049c78841b381c720abd4 = L.marker(
+                [35.815912, 127.153967],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_a0363216b01049c78841b381c720abd4.bindTooltip(
+                `<div>
+                     후보지21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04c82909eb964386b258bb69a1fb7552 = L.marker(
+                [35.817325, 127.153682],
+                {"color": "blue"}
+            ).addTo(map_3c606140e3e147b489422f6ae952078b);
+        
+    
+            marker_04c82909eb964386b258bb69a1fb7552.bindTooltip(
+                `<div>
+                     후보지22
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
