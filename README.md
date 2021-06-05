@@ -1,4 +1,4 @@
-# FinalProject_JBNU_ISE
+# 2021 JBNU 1st Capstone design project
 ## 2021-1 전북대 산업정보시스템공학과 종합설계
 ### 전주한옥마을 트램정거장 최적 부지 선정
 
