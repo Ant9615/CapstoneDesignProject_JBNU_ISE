@@ -3,6 +3,8 @@
  * Author: rudal
  * Creation Date: Jun 4, 2021 at 5:08:52 AM
  *********************************************/
+
+// Variables
 int place = ...;
 int candidate = ...;
 range ps = 1..place;
@@ -22,5 +24,12 @@ dvar boolean y[ps][cs] ;
    forall(i in ps)
     sum(j in cs) y[i][j] == 1;
    sum(i in ps,j in cs) y[i][j] >= 1;     
-   sum(i in ps,j in cs) y[i][j] == 7; 
- }
+   sum(i in ps,j in cs) y[i][j] == 6; 
+ }                                                                      
+ 
+ 
+ 
+ 
+ 
+ 
+                 
