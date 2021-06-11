@@ -1,8 +1,3 @@
-/*********************************************
- * OPL 20.1.0.0 Model
- * Author: rudal
- * Creation Date: Jun 4, 2021 at 5:08:52 AM
- *********************************************/
 
 // Variables
 int place = ...;
@@ -10,22 +5,40 @@ int candidate = ...;
 range ps = 1..place;
 range cs = 1..candidate;
 
-int c[ps][cs] = ...;
+tuple poss {
+   key int necsite;
+   key int cand;
+}
+
+int c[cs] = ...;
+
+{poss} Poss = ...;
 
  // D.V
-dvar boolean y[ps][cs] ;
+dvar boolean y[cs] ;
  
- // obj.to
- maximize sum(i in ps, j in cs) c[i][j]*y[i][j];
+// obj.to
+ maximize 
+   
+   sum(j in cs) c[j]*y[j];
  
- 
- //subj.to 
+
+// subj.to
  subject to{
-   forall(i in ps)
-    sum(j in cs) y[i][j] == 1;
-   sum(i in ps,j in cs) y[i][j] >= 1;     
-   sum(i in ps,j in cs) y[i][j] == 6; 
+  
+ 
+   forall(i in ps)   sum( <i ,j > in Poss) y[j] >= 1;
+   
+   sum(j in cs) y[j] == 6; 
+   
  }                                                                      
+ 
+ 
+  execute DISPLAY {
+    for(var j in cs )
+    if(y[j] > 0) write(j); 
+} 
+                                                               
  
  
  
