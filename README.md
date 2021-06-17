@@ -29,3 +29,6 @@
 ### 4. 사용 툴 
 > python: numpy, pandas, folium, selenium, etc \
 > Cplex
+
+### 5. 판넬
+<img src = "https://github.com/Ant9615/CapstoneDesignProject_JBNU_ISE/blob/master/pannel.png" />
